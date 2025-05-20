@@ -1,0 +1,428 @@
+/*I chose a monochromatic color scheme of the colour green and i know a lot of people are using green but i feel  
+
+like i was one of the first to use it because i choses it since day 1 because i want to symbolize nature and the  
+
+land that they are finnaly just getting back,*/
+
+/*  
+
+Colour Implementation: 
+
+I used dark green as the primary color for the navbar and another shade for the text backgrounds.  
+
+green and white for my radial-gradient 
+
+Neutral colors like white were used for text and contrast to improve readability. 
+
+*/
+
+/*All used images where gotten from chatgpt and deepai.org and magic school ai*/
+
+/*External stylesheet*/
+
+/*Styling for my navbar*/
+
+nav {
+  width: 100%;
+
+  position: fixed; /*makes it so my navbar doesnt move*/
+
+  top: 0;
+
+  z-index: 2;
+
+  -webkit-animation: fadeIn 1.5s ease-in-out 0.2s forwards;
+
+  animation: fadeIn 1.5s ease-in-out 0.2s forwards;
+}
+
+/*styling for all the unodered list in my website*/
+
+ul {
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex; /*makes my navbar be displayed with flex*/
+
+  -webkit-box-pack: justify;
+
+  -ms-flex-pack: justify;
+
+  justify-content: space-between; /*space between all flex items*/
+
+  -webkit-box-align: center;
+
+  -ms-flex-align: center;
+
+  align-items: center; /*makes the words along the vertical axiz be alligned in the middle*/
+
+  background-color: #405837;
+
+  list-style-type: none;
+
+  margin: 0;
+
+  padding: 0 3.3%;
+
+  border-bottom: white solid 0.1rem; /*adding border white solid and size of 011rem/ 1px to my bottom of navbar */
+
+  border-left: white solid 0.3rem;
+}
+
+/*Styling or my logo text/ Nawaai Ooden words in my navbar*/
+
+#logo-text {
+  font-size: 4rem;
+
+  font-weight: bold;
+
+  color: white;
+
+  font-family: "Roboto", sans-serif;
+}
+
+/*everything in my navbar*/
+
+.nav-links {
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+
+  gap: 5rem; /*5 rem of space in between each link*/
+}
+
+/*links in my navbar*/
+
+.nav-links li a {
+  position: relative;
+
+  text-decoration: none;
+
+  color: white;
+
+  font-size: 3rem;
+
+  font-weight: 300;
+
+  font-family: "Roboto", sans-serif;
+
+  line-height: 9.7rem;
+
+  -webkit-transition: color 0.3s ease;
+
+  -o-transition: color 0.3s ease;
+
+  transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 10%;
+
+  background-color: white;
+
+  -webkit-transform: scaleX(0);
+
+  -ms-transform: scaleX(0);
+
+  transform: scaleX(0);
+
+  -webkit-transform-origin: left;
+
+  -ms-transform-origin: left;
+
+  transform-origin: left;
+
+  -webkit-transition: -webkit-transform 0.3s ease;
+
+  transition: -webkit-transform 0.3s ease;
+
+  -o-transition: transform 0.3s ease;
+
+  transition: transform 0.3s ease;
+
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+  -webkit-transform: scaleX(1);
+
+  -ms-transform: scaleX(1);
+
+  transform: scaleX(1);
+}
+
+/*Main title of pages*/
+
+.main-title {
+  margin-top: 4.5vh; /*4.5vh of space between the top*/
+
+  font-size: 5rem;
+
+  color: white;
+
+  text-align: center;
+
+  font-family: "Times New Roman", Times, serif;
+
+  font-weight: bolder;
+
+  text-transform: capitalize;
+}
+
+/*styling for the green text areas all over my body*/
+
+.text-areas {
+  background-color: rgb(43, 59, 43);
+
+  color: white;
+
+  border-radius: 1%;
+
+  width: 86%;
+
+  height: -webkit-fit-content;
+
+  height: -moz-fit-content;
+
+  height: fit-content;
+
+  margin-left: 4.7%;
+
+  margin-top: 38vh;
+
+  padding: 2%;
+
+  position: relative;
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  text-indent: 4.5%; /*indent of the first word*/
+
+  -webkit-animation: fadeIn /*name  of animation*/ 1.5s ease-in-out 0.2s
+    forwards;
+
+  animation: fadeIn /*name  of animation*/ 1.5s ease-in-out 0.2s forwards;
+
+  opacity: 0; /*kind of like transparency of thing*/
+}
+
+/*Like the styling of text areas but for images*/
+
+img {
+  background-color: rgb(43, 59, 43);
+
+  border-radius: 1%;
+
+  width: 50%;
+
+  height: 100vh;
+
+  margin-left: 23%;
+
+  margin-top: 38vh;
+
+  padding: 2%;
+
+  -webkit-animation: fadeInforimages 1.5s ease-in-out 0.2s forwards;
+
+  animation: fadeInforimages 1.5s ease-in-out 0.2s forwards;
+
+  opacity: 1;
+
+  background-color: rgb(43, 59, 43);
+}
+
+/*animation for text areas and navbar*/
+
+@-webkit-keyframes fadeIn {
+  from {
+    /*start at opacity 0*/
+
+    opacity: 0;
+
+    -webkit-transform: translateY(35px);
+
+    transform: translateY(35px);
+  }
+
+  to {
+    /*end at opacity 0.8*/
+
+    opacity: 0.8;
+
+    -webkit-transform: translateY(0);
+
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    /*start at opacity 0*/
+
+    opacity: 0;
+
+    -webkit-transform: translateY(35px);
+
+    transform: translateY(35px);
+  }
+
+  to {
+    /*end at opacity 0.8*/
+
+    opacity: 0.8;
+
+    -webkit-transform: translateY(0);
+
+    transform: translateY(0);
+  }
+}
+
+/*animation for images so that the images arent transparent when animation is over*/
+
+@-webkit-keyframes fadeInforimages {
+  from {
+    /*start at opactity 0*/
+
+    opacity: 0;
+
+    -webkit-transform: translateY(35px);
+
+    transform: translateY(35px);
+  }
+
+  to {
+    /*end at opacity 1*/
+
+    opacity: 1;
+
+    -webkit-transform: translateY(0);
+
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInforimages {
+  from {
+    /*start at opactity 0*/
+
+    opacity: 0;
+
+    -webkit-transform: translateY(35px);
+
+    transform: translateY(35px);
+  }
+
+  to {
+    /*end at opacity 1*/
+
+    opacity: 1;
+
+    -webkit-transform: translateY(0);
+
+    transform: translateY(0);
+  }
+}
+
+/*styling for my footer*/
+
+.site-footer {
+  background-color: #405837;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 2rem 0;
+
+  font-size: 1.6rem;
+
+  position: relative;
+
+  width: 100%;
+
+  margin-top: 5vh;
+
+  border-top: white solid 0.2rem;
+}
+
+/*styling for paragraphs in my footer*/
+
+.footer-content p {
+  margin: 0.5rem;
+
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+/*styling for all the h1's in my website, used for subheading in text areas*/
+
+h1 {
+  color: white;
+
+  font-size: 4rem;
+
+  font-style: italic;
+
+  text-decoration: underline;
+
+  font-weight: 800;
+}
+
+/*styling for the body of my website*/
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  /*same font faily for everything unless otherwise defined*/
+
+  font-size: 2rem;
+
+  word-spacing: 0.87rem; /*word spacing is 0.87rems or 87px*/
+
+  line-height: 1.5;
+
+  letter-spacing: 0.1rem;
+
+  background-color: #405837;
+
+  margin: 0;
+
+  padding: 0;
+
+  border: 1%;
+
+  color: white;
+
+  display: -ms-grid;
+
+  display: grid; /*sisplay of body grid*/
+
+  -ms-grid-rows: auto 1fr auto;
+
+  grid-template-rows: auto 1fr auto; /* header, content, footer */
+
+  min-height: 100vh; /*min height is 100vh*/
+}
+
+/*styling for my html file*/
+
+html {
+  font-size: 62.5%;
+
+  /*makes it so my rems become 10px=1Rems easier than doing hard math*/
+}
