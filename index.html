@@ -1,75 +1,52 @@
 <!--   
-
 Name:  Ibrahim Abdulsalaam.
-
 Course:  Web dev 10 s  
-
 Teacher:  Ms. Hoitink  
-
 School:  Pembina Trails Collegiate  
-
 Date Last Modified: May 20, 2025 
-
 -->
-
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="index.css" />
-
+    <link rel="stylesheet" href="stylesheet.css" />
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Home - Naawi-Oodena</title>
-
+    <!--Css internal stylesheet-->
+    <!--css for background image-->
     <style>
       #section-of-image {
         border-left: white solid 0.3rem;
-
         background-image: url(images/bobobear.png);
-
         background-size: 100% 100%;
-
         background-repeat: no-repeat;
-
         width: 100%;
-
         height: 100%;
-
         position: fixed;
-
         top: 13%;
       }
 
+      /*this is here because i had another line of title*/
       .text-areas {
         margin-top: 50vh;
       }
 
+      /*styling for the map section*/
       #map {
         background-color: rgb(43, 59, 43);
-
         border-radius: 1%;
-
         width: 50%;
-
         height: 100vh;
-
         margin-left: 23%;
-
         margin-top: 38vh;
-
         padding: 2%;
-
         animation: fadeInforimages 1.5s ease-in-out 0.2s forwards;
-
         opacity: 1;
       }
     </style>
   </head>
-
   <body>
+    <!--Html for navbar-->
     <header>
       <nav>
         <ul>
@@ -83,7 +60,9 @@ Date Last Modified: May 20, 2025
       </nav>
     </header>
 
+    <!--Html for background image-->
     <section id="section-of-image">
+      <!--Html for main titles-->
       <div tabindex="4" class="main-title">Welcome to Naaawi Oodena</div>
       <div tabindex="5" class="main-title">
         “Reconnecting community, culture, and the land.”
@@ -91,6 +70,7 @@ Date Last Modified: May 20, 2025
     </section>
 
     <main>
+      <!--text area section forWhat is Naawi-Oodena? -->
       <section class="text-areas">
         <h1 tabindex="6">What is Naawi-Oodena?</h1>
         <p>
@@ -108,6 +88,7 @@ Date Last Modified: May 20, 2025
         </p>
       </section>
 
+      <!--image for What is Naawi-Oodena text area section-->
       <section>
         <figure>
           <img
@@ -117,6 +98,7 @@ Date Last Modified: May 20, 2025
         </figure>
       </section>
 
+      <!--text area section for why we matter-->
       <section class="text-areas">
         <h1 tabindex="8">Why we matter</h1>
         <p>
@@ -133,6 +115,7 @@ Date Last Modified: May 20, 2025
         </p>
       </section>
 
+      <!--image for we matter section-->
       <section>
         <figure>
           <img
@@ -142,6 +125,7 @@ Date Last Modified: May 20, 2025
         </figure>
       </section>
 
+      <!--text area section for Who Is Behind Naawi-Oodena-->
       <section class="text-areas">
         <h1 tabindex="10">Who Is Behind Naawi-Oodena</h1>
         <p>
@@ -157,6 +141,7 @@ Date Last Modified: May 20, 2025
         </p>
       </section>
 
+      <!--Iframe of map of location of naawi oodena-->
       <iframe
         tabindex="11"
         id="map"
@@ -169,11 +154,13 @@ Date Last Modified: May 20, 2025
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
 
+    <!--html of footer-->
     <footer tabindex="12" class="site-footer">
       <div class="footer-content">
         <p>&copy; 2025 Naawi-Oodena | Site by Ibrahim Abdulsalaam</p>
         <p>Web Development 10S | Ms. Hoitink | Pembina Trails Collegiate</p>
         <p>Learn more-</p>
+        <!--Iframe of youtube video-->
         <iframe
           tabindex="13"
           width="40%"
