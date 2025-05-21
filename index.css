@@ -68,6 +68,8 @@ ul {
   border-bottom: white solid 0.1rem; /*adding border white solid and size of 011rem/ 1px to my bottom of navbar */
 
   border-left: white solid 0.3rem;
+
+  flex-wrap: wrap;
 }
 
 /*Styling or my logo text/ Nawaai Ooden words in my navbar*/
